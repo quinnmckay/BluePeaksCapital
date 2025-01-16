@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 86%);
+}
+.logo {
+    flex: 0 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.header {
+    color: hsl(242, 100%, 20%);
+    flex: 1;
+    text-align: left;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(242, 100%, 20%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(242, 100%, 10%);
+}
+.navbar li{
+    float: left;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+    font-size: x-large;
+}
+aside{
+    float: right;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Outfit';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Here email submission form stuff*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    float: left;
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: hsl(242, 100%, 20%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    background-color: hsl(0, 0%, 86%);
+    width: 400px;
+    height: 50px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 3px solid hsl(242, 100%, 20%);
+}
+.contact-inputs::placeholder{
+    color: black;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: hsl(0, 0%, 86%);
+}
+/*End of email submission stuff*/
+footer{
+    display: block;
+    clear: both;
+    color: white;
+    background-color: hsl(242, 100%, 20%);
+    padding: 25px;
+    height: max-content;
+}
+footer a{
+    color: white;
+    font-size: large;
+}
+footer h1{
+    text-align: right;
+}
